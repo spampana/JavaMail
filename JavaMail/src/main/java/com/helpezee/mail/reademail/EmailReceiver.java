@@ -1,4 +1,4 @@
-package com.helpezee.reademail;
+package com.helpezee.mail.reademail;
 
 import java.util.Properties;
 

@@ -1,4 +1,4 @@
-package com.helpezee.searchmail;
+package com.helpezee.mail.searchmail;
 
 import java.util.ArrayList;
 import java.util.List;

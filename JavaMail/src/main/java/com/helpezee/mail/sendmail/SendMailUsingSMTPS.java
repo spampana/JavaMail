@@ -1,4 +1,4 @@
-package com.helpezee.sendmail;
+package com.helpezee.mail.sendmail;
 
 import java.util.Properties;
 import javax.mail.*;

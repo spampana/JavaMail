@@ -76,9 +76,10 @@ public class BouncedMailIndentifier implements ConnectionListener, StoreListener
 		int maxRetries = 1;
 		int minimumWait = 5; // in seconds
 		boolean isExchange = false;
-		String proccessedFolerName = "WVCP";
-		Mailbox vo = new Mailbox("satya.gooogle@gmail.com", "satyagoogle", "imap.gmail.com", port, protocol, folderName,
-				messagesPerRead, useSsl, maxRetries, minimumWait, isExchange, proccessedFolerName);
+		//Make sure this proccessedFolder is created in ur mailbox before testing this functionality
+		String proccessedFolderName = "TEST";
+		Mailbox vo = new Mailbox("abc@gmail.com", "password", "imap.gmail.com", port, protocol, folderName,
+				messagesPerRead, useSsl, maxRetries, minimumWait, isExchange, proccessedFolderName);
 		BouncedMailIndentifier reader = new BouncedMailIndentifier(vo);
 		try {
 			reader.readMail();
