@@ -81,7 +81,7 @@ public final class SmtpScanner {
 		Matcher m = pattern1.matcher(StringUtil.cut(body, maxLenToScan));
 		if (m.find()) { // only one time
 			String token = m.group(m.groupCount());
-			System.out.println("examineBody(): RFC1893 token found: " + token);
+			System.out.println("##### examineBody(): RFC1893 token found ######: " + token);
 			return searchRfc1893CodeTable(token);
 		}
 		return null;
